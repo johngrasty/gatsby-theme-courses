@@ -1,5 +1,5 @@
 {
-  "name": "@hangindev/gatsby-theme-courses",
+  "name": "gatsby-theme-courses",
   "version": "1.0.20",
   "author": "Jason Leung <hangindev@gmail.com>",
   "description": "A Gatsby theme for building course platform. Use Youtube as video host.",
