@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import ThemeCourse from '@hangindev/gatsby-theme-courses/src/components/Course';
-import { usePageValue } from '@hangindev/gatsby-theme-courses/src/context/PageContext';
+import ThemeCourse from '../../../../gatsby-theme-courses/src/components/Course';
+import { usePageValue } from '../../../../gatsby-theme-courses/src/context/PageContext';
 
 const Message = styled.h1`
   position: absolute;

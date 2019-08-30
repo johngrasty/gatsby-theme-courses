@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Layout from './Layout';
-import SEO from './SEO';
+import SEO from './seo';
 import CoursesList from './CoursesList';
 import CoursesHeader from './CoursesHeader';
 import CoursesFooter from './CoursesFooter';
@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 function Courses() {
   return (
     <Layout>
-      <SEO title="Courses" />
+      <SEO title="God with Us course with Desi Maxwell" />
       <Wrapper>
         <CoursesHeader />
         <h3>Courses</h3>

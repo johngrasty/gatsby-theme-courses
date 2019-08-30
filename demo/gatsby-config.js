@@ -1,16 +1,18 @@
 module.exports = {
   plugins: [
     {
-      resolve: `@hangindev/gatsby-theme-courses`,
+      resolve: `gatsby-theme-courses`,
       options: {
         contentPath: 'content/courses',
       },
     },
   ],
   siteMetadata: {
-    title: `Demo of @hangindev/gatsby-theme-courses`,
-    author: `Hangindev`,
-    description: `A Gatsby theme for building course platform. Support autoplay, bookmark & progress tracking. Use Youtube as video host`,
+    title: `God with Us`,
+    author: `Desi Maxwell with Vrelec Publishing of Slovenia`,
+    producer: 'Vrelec',
+    description: `The central story arc of the Bible taught in 12 video lessons`,
+    siteUrl: `https://godwithus.vrelec.si`,
     social: [
       {
         name: `github`,

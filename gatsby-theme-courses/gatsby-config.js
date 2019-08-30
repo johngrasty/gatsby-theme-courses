@@ -2,9 +2,9 @@ const config = options => {
   const { mdx = true } = options;
   return {
     siteMetadata: {
-      title: `@hagnindev/gatsby-theme-courses`,
-      author: `HanginDev`,
-      description: `A Gatsby theme for building course platform. Use Youtube as video host.`,
+      title: `God with Us - Vrelec`,
+      author: `Desi Maxwell`,
+      description: `The central story arc of the Bible taught in 12 video lessons`,
       social: [
         {
           name: `GitHub`,
@@ -29,6 +29,7 @@ const config = options => {
             { resolve: `gatsby-remark-numbered-footnotes` },
             { resolve: `gatsby-remark-smartypants` },
           ],
+          // eslint-disable-next-line global-require
           remarkPlugins: [require(`remark-slug`)],
         },
       },
