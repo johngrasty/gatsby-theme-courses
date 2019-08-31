@@ -6,6 +6,13 @@ module.exports = {
         contentPath: 'content/courses',
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: 'pages',
+      },
+    },
   ],
   siteMetadata: {
     title: `God with Us`,
