@@ -3,6 +3,9 @@ import { jsx } from 'theme-ui';
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import Layout from '../../../gatsby-theme-courses/src/components/Layout';
+
+export const Div = props => <div {...props} />;
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -15,7 +18,13 @@ import Img from 'gatsby-image';
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const Desi = () => (
+export const AboutLayout = ({ children }) => (
+  <Layout>
+    <Div sx={{ maxWidth: 800, px: 5 }}>{children}</Div>
+  </Layout>
+);
+
+export const Desi = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -31,4 +40,3 @@ const Desi = () => (
     render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 );
-export default Desi;

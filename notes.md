@@ -2,7 +2,7 @@
 ## To Do
 
 * Edit link color or make handouts download more obvious
-- Apply typography to mdx
+* Apply typography to mdx
 
 
 
