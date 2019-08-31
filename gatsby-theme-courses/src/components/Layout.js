@@ -5,6 +5,7 @@ import globalStyle from '../styled/globalStyle';
 import typography from '../styled/typography';
 import defaultTheme from '../styled/theme';
 import Nav from './Nav';
+import Footer from './Footer';
 
 const GlobalStyle = createGlobalStyle`
   ${typography.toString()}
@@ -22,6 +23,7 @@ const Layout = ({ children, theme }) => (
       <GlobalStyle />
       <Nav />
       <Container>{children}</Container>
+      <Footer />
     </>
   </ThemeProvider>
 );

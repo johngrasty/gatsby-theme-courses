@@ -4,7 +4,6 @@ import Layout from './Layout';
 import SEO from './seo';
 import CoursesList from './CoursesList';
 import CoursesHeader from './CoursesHeader';
-import CoursesFooter from './CoursesFooter';
 
 const Wrapper = styled.div`
   padding: 0 1rem;
@@ -18,7 +17,6 @@ function Courses() {
         <CoursesHeader />
         <h3>Courses</h3>
         <CoursesList />
-        <CoursesFooter />
       </Wrapper>
     </Layout>
   );
