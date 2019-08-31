@@ -15,7 +15,7 @@ function Courses() {
       <SEO title="God with Us course with Desi Maxwell" />
       <Wrapper>
         <CoursesHeader />
-        <h3>Courses</h3>
+        <h3>Course</h3>
         <CoursesList />
       </Wrapper>
     </Layout>

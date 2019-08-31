@@ -35,6 +35,12 @@ export default {
       lineHeight: 'body',
       fontWeight: 'body',
     },
+    header: {
+      bg: 'primary',
+      navlink: {
+        color: 'background',
+      },
+    },
     h1: {
       ...heading,
       fontSize: 5,
@@ -99,4 +105,5 @@ export default {
       color: 'primary',
     },
   },
+  breakpoints: ['480px', '750px', '832px', '1024px'],
 };

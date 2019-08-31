@@ -24,7 +24,7 @@ function Footer() {
           py: 4,
         }}
       >
-        <Link to="/" sx={{ variant: 'styles.navlink', py: 1, px: 3 }}>
+        <Link to="/" sx={{ variant: 'styles.navlink', py: [3, 1], px: 3 }}>
           Home
         </Link>
         <a
@@ -33,11 +33,11 @@ function Footer() {
         >
           Xplorations
         </a>
-        <Link to="/about-desi" sx={{ variant: 'styles.navlink', py: 1, px: 3 }}>
+        <Link to="/about-desi" sx={{ variant: 'styles.navlink', py: [3, 1], px: 3 }}>
           About Desi Maxwell
         </Link>
         <div sx={{ mx: 'auto' }} />
-        <div sx={{ py: 1, pl: 3 }}>
+        <div sx={{ py: [3, 1], pl: 3 }}>
           © {new Date().getFullYear()} Desi Maxwell
         </div>
       </div>
