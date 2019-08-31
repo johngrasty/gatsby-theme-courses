@@ -13,7 +13,6 @@
     "build": "^0.1.4",
     "execa": "^2.0.4",
     "gatsby": "^2.14.7",
-    // "gatsby-theme-courses": "^1.0.20",
     "lodash": "^4.17.15",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
