@@ -13,6 +13,7 @@ const config = options => {
       ],
     },
     plugins: [
+      'gatsby-plugin-theme-ui',
       mdx && {
         resolve: `gatsby-plugin-mdx`,
         options: {
@@ -23,6 +24,7 @@ const config = options => {
               options: {
                 maxWidth: 1380,
                 linkImagesToOriginal: false,
+                backgroundColor: 'transparent',
               },
             },
             { resolve: `gatsby-remark-copy-linked-files` },

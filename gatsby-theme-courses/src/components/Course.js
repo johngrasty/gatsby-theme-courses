@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from './Layout';
-import SEO from './SEO';
+import SEO from './seo';
 import Classroom from './Classroom';
 import { usePageValue } from '../context/PageContext';
 
