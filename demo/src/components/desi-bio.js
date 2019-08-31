@@ -20,7 +20,9 @@ export const Div = props => <div {...props} />;
 
 export const AboutLayout = ({ children }) => (
   <Layout>
-    <Div sx={{ maxWidth: 800, px: 5 }}>{children}</Div>
+    <Div sx={{ maxWidth: 800, px: 5 }}>
+      {children}
+    </Div>
   </Layout>
 );
 
