@@ -13,6 +13,7 @@ const config = options => {
       ],
     },
     plugins: [
+      'gatsby-plugin-theme-ui',
       mdx && {
         resolve: `gatsby-plugin-mdx`,
         options: {
