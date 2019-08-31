@@ -41,6 +41,7 @@
   "peerDependencies": {
     "@emotion/core": "^10.0.16",
     "@mdx-js/react": "^1.4.0",
+    "gatsby-image": "^2.2.15",
     "gatsby-plugin-theme-ui": "^0.2.38",
     "theme-ui": "^0.2.38"
   }
