@@ -1,4 +1,4 @@
 [build]
-  base = "demo"
-  command = "gatsby build"
+  base = ""
+  command = "npm i yarn@latest && yarn && yarn workspace demo build"
   publish = "demo/public"
