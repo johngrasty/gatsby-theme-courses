@@ -1,18 +1,22 @@
 import React from 'react';
 import CookieConsent from 'react-cookie-consent';
+import { useThemeUI } from 'theme-ui';
 
 const Gdpr = () => {
+  const context = useThemeUI();
+  const { colors } = context.theme;
+
   return (
     <CookieConsent
       location="bottom"
-      buttonText="Sure man!!"
-      cookieName="myAwesomeCookieName2"
-      style={{ background: '#2B373B' }}
-      buttonStyle={{ color: '#4e503b', fontSize: '13px' }}
-      expires={150}
+      buttonText="Accept or scroll to accept"
+      cookieName="GDPRConsent"
+      style={{ background: colors.alert }}
+      buttonStyle={{ color: colors.text, fontSize: '13px' }}
+      acceptOnScroll
     >
-      This website uses cookies to enhance the user experience.{' '}
-      <span style={{ fontSize: '10px' }}>This bit of text is smaller :O</span>
+      This website uses only cookies and stores information necessary to play
+      YouTube videos and record that you accepted this term.{' '}
     </CookieConsent>
   );
 };

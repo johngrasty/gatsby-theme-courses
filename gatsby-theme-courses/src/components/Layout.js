@@ -38,6 +38,7 @@ const Layout = ({ children, theme }) => (
         }}
       >
         <Container>{children}</Container>
+        <Gdpr />
       </main>
       <Footer />
     </div>

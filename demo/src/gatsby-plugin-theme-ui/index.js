@@ -28,6 +28,7 @@ export default {
     primary: '#07c',
     secondary: '#30c',
     muted: '#f6f6f6',
+    alert: '#2B373B',
   },
   styles: {
     root: {
