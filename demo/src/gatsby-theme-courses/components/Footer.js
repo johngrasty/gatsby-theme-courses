@@ -10,6 +10,7 @@ function Footer() {
         color: 'background',
         bg: 'text',
         variant: 'styles.footer',
+        mt: 5,
       }}
     >
       <div
@@ -19,9 +20,9 @@ function Footer() {
           alignItems: 'center',
           maxWidth: 1200,
           mx: 'auto',
-          mt: 5,
+          mt: 2,
           px: 2,
-          py: 4,
+          py: 3,
         }}
       >
         <Link to="/" sx={{ variant: 'styles.navlink', py: [3, 1], px: 3 }}>
@@ -33,7 +34,10 @@ function Footer() {
         >
           Xplorations
         </a>
-        <Link to="/about-desi" sx={{ variant: 'styles.navlink', py: [3, 1], px: 3 }}>
+        <Link
+          to="/about-desi"
+          sx={{ variant: 'styles.navlink', py: [3, 1], px: 3 }}
+        >
           About Desi Maxwell
         </Link>
         <div sx={{ mx: 'auto' }} />
