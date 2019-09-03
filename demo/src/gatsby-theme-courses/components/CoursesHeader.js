@@ -59,7 +59,7 @@ function CoursesHeader() {
           title="God with Us with Desi Maxwell Trailer"
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/Y3UApDAfmGw"
+          src="https://www.youtube-nocookie.com/embed/Y3UApDAfmGw"
           frameBorder="0"
           allowFullScreen
         />
@@ -80,7 +80,7 @@ function CoursesHeader() {
         Temple, in the flesh, in the Holy Spirit, and finally, he will dwell
         among his people in a new creation, in which he will be the centre.{' '}
       </p>
-      
+
     </header>
   );
 }

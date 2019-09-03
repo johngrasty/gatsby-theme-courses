@@ -24,6 +24,7 @@ function YoutubePlayer({ autoplay, className, id, aspectRatio, ...props }) {
           playerVars: { autoplay: autoplay ? 1 : 0 },
           width: '100%',
           height: '100%',
+          host: 'https://www.youtube-nocookie.com',
         }}
         {...props}
       />
