@@ -76,7 +76,7 @@ const CoursePreview = ({
   id,
   title,
   slug,
-  lastUpdated,
+  // lastUpdated,
   coverImage,
   lessons,
   premium,
@@ -84,7 +84,7 @@ const CoursePreview = ({
 }) => {
   const [{ likes }, dispatch] = useAppValue();
   const totalDuration = durationInLongText(
-    lessons.reduce((pv, cv) => pv + cv.duration, 0)
+    lessons.reduce((pv, cv) => pv + cv.duration, 0),
   );
   return (
     <CardWrapper className={className}>
@@ -94,14 +94,14 @@ const CoursePreview = ({
             <StyledImg fluid={coverImage.childImageSharp.fluid} alt={title} />
           </ImgWrapper>
           <CardContent>
-            <small>Last updated: {lastUpdated}</small>
+            {/* <small>Last updated: {lastUpdated}</small> */}
             <h3>{title}</h3>
             <p>
               {lessons.length} Lessons | Total: {totalDuration}
             </p>
           </CardContent>
         </Link>
-        <StyledLike
+        {/* <StyledLike
           onChange={liked =>
             dispatch({
               type: liked ? 'like' : 'unlike',
@@ -109,7 +109,7 @@ const CoursePreview = ({
             })
           }
           liked={!!likes[id]}
-        />
+        /> */}
         {premium && <PremiumRibbon>{premium}</PremiumRibbon>}
       </Card>
     </CardWrapper>
@@ -119,7 +119,7 @@ CoursePreview.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
-  lastUpdated: PropTypes.string.isRequired,
+  // lastUpdated: PropTypes.string.isRequired,
   coverImage: PropTypes.shape({
     childImageSharp: PropTypes.shape({
       fluid: PropTypes.object.isRequired,
@@ -128,7 +128,7 @@ CoursePreview.propTypes = {
   lessons: PropTypes.arrayOf(
     PropTypes.shape({
       duration: PropTypes.number.isRequired,
-    })
+    }),
   ),
   premium: PropTypes.string,
 };

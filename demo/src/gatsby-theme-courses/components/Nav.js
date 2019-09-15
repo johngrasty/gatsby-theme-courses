@@ -2,9 +2,9 @@
 import { jsx } from 'theme-ui';
 import React from 'react';
 import { Link } from 'gatsby';
-import { Image} from 'rebass';
+import { Image } from 'rebass';
 import { useSiteMetadata } from '../../../../gatsby-theme-courses/src/hooks/use-site-metadata.js';
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo.png';
 
 const Nav = () => {
   const { title } = useSiteMetadata();
@@ -42,7 +42,7 @@ const Nav = () => {
             py: 2,
           }}
         >
-          About
+          About Desi
         </Link>
         <Link
           to="/God-with-us"
@@ -50,7 +50,7 @@ const Nav = () => {
             variant: 'styles.header.navlink',
             ml: 4,
             py: 2,
-            pr: [2, 2, 5]
+            pr: [2, 2, 5],
           }}
         >
           Course
