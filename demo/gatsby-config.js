@@ -13,6 +13,21 @@ module.exports = {
         name: 'pages',
       },
     },
+    {
+      resolve: 'gatsby-plugin-ackee-tracker',
+      options: {
+        // Domatin ID found when adding a domain in the admin panel.
+        domainId: '17af5641-03af-4cdc-b69d-666f4e326083',
+        // URL to Server eg: "https://analytics.test.com".
+        server: 'https://ackee-2q8g.onrender.com',
+        // Disabled analytic tracking when running localy
+        ignoreLocalhost: true,
+        // Enable or disable the tracking of your own visits (as identified by your login to the Ackee dashboard).
+        ignoreOwnVisits: false,
+        // If enabled it will collect info on OS, BrowserInfo, Device  & ScreenSize
+        detailed: true,
+      },
+    },
   ],
   siteMetadata: {
     title: `God with Us`,
